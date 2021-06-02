@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"> <meta name= "name" content=
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content= "plantas, flores, macetas, vivero, naturaleza, sustrato, tierra, herramientas">
+      <meta name= "description" content="En The Flower Shop generamos un lugar donde vas a encontrar la mejor calidad en plantas, el mejor surtido de macetas, y todo lo necesario para poder cuidarlas de la manera que merecen. Si elegís plantas elegís Vida.">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="img/Logo.png">
+      <title>The Flower Shop</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #001233;">
+        <div class="container-fluid" style="background-color:#001233;">
+          <a class="navbar-brand" href="index.html"><b>The Flower Shop</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html"><b>Productos</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Galeria.html"><b>Galería</b></a>
+              </li> <li class="nav-item">
+                <a class="nav-link" href="Cursos.html"><b>Cursos</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CAROUSEL -->
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay-image" style="background-image: url(img/slide1.jpg);"></div>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1><b>The Flower Shop</b></h1>
+                <p><b>En The Flower Shop generamos un lugar donde vas a encontrar la mejor calidad en plantas, el mejor surtido de macetas, y todo lo necesario para poder cuidarlas de la manera que merecen. Si elegís plantas elegís Vida.</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(img/slide2.jpg);"></div>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1><b>Cursos</b></h1>
+                <p><b>Tenemos los cursos que nececitas para iniciarte en el mundo de la Jardineria.</b></p>
+                <p><a class="btn btn-lg btn-primary" href="Cursos.html"><b>Ver Cursos</b></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(img/slide3.jpg);"></div>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1><b>Visita nuestra Galería!</b></h1>
+                <p><a class="btn btn-lg btn-primary" href="Galeria.html"><b>Visita nuestra Galería!</b></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- PRODUCTOS -->
+      <div class="container marketing">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div><img src="img/maceta.jpg" width="140" height="140" style="border-radius: 80%;"></div>
+            <h2><b>Macetas</b></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis obcaecati fugit alias est.</p>
+          </div>
+
+          <div class="col-lg-4">  
+            <div><img src="img/planta.jpg" width="140" height="140" style="border-radius: 80%;"></div>
+            <h2><b>Plantas</b></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis obcaecati fugit alias est.</p>
+          </div>
+
+          <div class="col-lg-4">
+            <div><img src="img/elementosdejardineria.jpg" width="140" height="140" style="border-radius: 80%"></div>
+            <h2><b>Herramientas</b></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis obcaecati fugit alias est.</p>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+        <!-- CUADRILLA -->
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><b>Atencion Personalizada</b></h2>
+            <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis obcaecati fugit alias est.</b></p>
+          </div>
+          <div class="col-md-5 order-md-1"
+            style="background-image: url(img/fotouno.png);">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><b>Toda la variedad en Plantas</b></h2>
+            <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis obcaecati fugit alias est.</b></p>
+          </div>
+          <div class="col-md-5"
+            style="background-image: url(img/fotodos.png);">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></svg>
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- SERVICIOS -->
+        <section class="servicios">
+          <div class="row">
+            <div class="col-md-12"><h1>¿Qué más te ofrecemos en The Flower Shop?</h1></div>
+            <div class="col-md-4"><h2>Atención post venta</h2></div>
+            <div class="col-md-4"><h5>Entrega a domicilio</h5></div>
+            <div class="col-md-4"><h3>Local apto para personas con movilidad reducida</h3></div>	
+          </div>
+        </section>
+
+        <hr class="featurette-divider">
+        
+        <!-- FOOTER -->
+        <section class="pie">
+          <footer>
+            <section class="row">
+            
+              <div class="col-md-4"><img src="img/Logo.png" width="100px"><br><h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad velit aspernatur sapiente? Exercitationem</h6></div>
+              
+              <div class="col-md-4"><h4>Contacto</h4><br>
+                <li><h7>mail@theflowershop.com</h7></li>
+                <li><h7>RRHH@theflowershop.com</h7></li>
+                <li><h7>15-5555-5555 / 47955830</h7></li>
+              </div>
+
+              <div class="col-md-4"><h4>Nuestras Redes</h4><br>
+                <img src="img/face-logo.png" width="57px">
+                <img src="img/insta-logo.png" width="50px">
+              </div>
+
+            </section>
+          </footer>
+        </section>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
+  </body>
+</html>
