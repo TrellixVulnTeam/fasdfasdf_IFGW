@@ -130,12 +130,11 @@ padding: 1rem 0;
 .product__footer h3 {
 padding: 1rem 0;
 font-weight: bolder;
-font-size: 20px;
+font-size: 1.6rem;
 }
 .h4{
 font-weight: bolder;
 text-decoration: none;
-font-size: 19px;
 }
 .product__btn {
   border: none;
@@ -159,7 +158,7 @@ font-size: 19px;
 
 /*======================GALERIA======================*/
 .container.gallery-container {
-    height: auto;
+    min-height: 110vh;
     padding-top: 5%;
 }
 .tz-gallery {
@@ -290,60 +289,56 @@ a:hover{
 }
 
 /* RESPONSIVE CSS */
-@media(max-width: 800px){
-  @import "banner800px";
-  @import "footer800px";
+@media(max-width: 970px){
   .body{
     margin: 0%;
     padding: 0%;
     align-items: center;
-  }
-  .product{
-    width: 110%;
-  }
-  .bannerimg{
-    width: 100%;
-  }
-  .cursos__img{
-    width: 370px;
-    padding-top: 18%;
-  }
-  .boton--absolute{
-    position: absolute;
-    right: 35%;
-  }
-  .gallery-container{
-    height: auto;
-  }
-  .featurette-divider {
-    margin: 6rem 0;
-  }
-}
-
-@media(max-width: 600px){
-  @import "banner600px";
-  .body{
-    margin: 0%;
-    padding: 0%;
-    align-items: center;
-  }
-  .product{
-    width: 110%;
-  }
-  .bannerimg{
-    width: 100%;
   }
   .cursos__img{
     display: table-row;
   }
-  .boton--absolute{
-    position: absolute;
-    right: 35%;
+  .fotocontacto{
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+  .body{
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+  }
+  .banner{
+    top: 30%;
+    left: 15%;
+  }
+  .cursos__img{
+    display: table-row;
+  }
+}
+
+@media(max-width: 600px){
+  .body{
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+  }
+  .banner{
+    top: 20%;
+    left: 25%;
+    font-size: 35px;
+    width: 50%;
+  }
+  .bannerimg{
+    width: 105%;
+  }
+  .cursos__img{
+    display: table-row;
   }
 }
 
 @media(max-width: 480px){
-  @import "banner480px";
   .body{
     margin: 0%;
     padding: 0%;
@@ -352,20 +347,18 @@ a:hover{
   .container__marketing{
     align-items: center;
   }
-  .bannerimg{
-    width: 100%;
+  .banner{
+    top: 20%;
+    left: 25%;
+    font-size: 35px;
+    width: 50%;
   }
   .cursos__img{
     display: none;
   }
-  .boton--absolute{
-    position: absolute;
-    right: 145px;
-  }
 }
 
-@media(max-width: 320px){
-  @import "banner320px";
+@media(max-width: 375px){
   .body{
     margin: 0%;
     padding: 0%;
@@ -374,17 +367,22 @@ a:hover{
   .bannerimg{
     width: 100%;
   }
+  .imgproducto{
+    width: 50%;
+  }
+  .row{
+    width: 80%;
+  }
+  .product__header{
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+  }
   .tz-gallery{
     align-items: center;
     left: 0%;
   }
   .cursos__img{
     display: none;
-  }
-  .product__header{
-    width: 90%;
-  }
-  .product__footer{
-    width: 90%;
   }
 }
