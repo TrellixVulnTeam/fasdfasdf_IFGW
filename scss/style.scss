@@ -59,6 +59,8 @@ body {
   color: white;
   background-color: #001233;
   font-weight: bolder;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 .col-md-4 h2{
   color: white;
@@ -101,11 +103,6 @@ body {
 }
 .featurette-divider {
   margin: 3rem 0;
-}
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
 }
 
 /*======================PRODUCTOS======================*/
@@ -386,4 +383,6 @@ a:hover{
     display: none;
   }
 }
+
+
 
