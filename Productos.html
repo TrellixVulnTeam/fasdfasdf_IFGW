@@ -74,185 +74,293 @@
       <div>
         <section class="productos">
           <div class="container">
-            <div class="row">
+            
+            <input type="radio" id="Todos" name="categories" value="Todos" checked>
+            <input type="radio" id="Plantas" name="categories" value="Plantas">
+            <input type="radio" id="Sustratos" name="categories" value="Sustratos">
+            <input type="radio" id="Macetas" name="categories" value="Macetas">
+            <input type="radio" id="Herramientas" name="categories" value="Herramientas">
+            <input type="radio" id="Semillas" name="categories" value="Semillas">
+    
+            <div class="container-category">
+                <label for="Todos">Todos</label>
+                <label for="Plantas">Plantas</label>
+                <label for="Sustratos">Sustratos</label>
+                <label for="Macetas">Macetas</label>
+                <label for="Herramientas">Herramientas</label>
+                <label for="Semillas">Semillas</label>
+            </div>
 
-              <div class="col-sm-4">
+            <div class="row" style="padding-top: 5%;">
+
+              <div class="col-sm-3" data-category="Plantas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/duranta aurea.png">
+                    <img class="imgproducto" src="img/productos/duranta aurea.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3><b>Duranta Aurea</b></h3>
                     <div>
                       <h4><b>$780</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>
-                    </a>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Plantas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/jazmin del cabo.jpg">
+                    <img class="imgproducto" src="img/productos/jazmin del cabo.jpg" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Jazmin del Cabo</h3>
                     <div>
                       <h4><b>$780</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>               
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Plantas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/lavanda dentata.jpg">
+                    <img class="imgproducto" src="img/productos/lavanda dentata.jpg" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Lavanda Dentata</h3>
                     <div>
                       <h4><b>$140</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
-                  </div>
-                </div>
-              </div>
-                      
-              <div class="col-sm-4">
-                <div class="product">
-                  <div class="product__header">
-                    <img class="imgproducto" src="img/productos/sustrato para suculentas.png">
-                  </div>
-                  <div class="product__footer">
-                    <h3>Sustrato para Suculentas 5 L</h3>
-                    <div>
-                      <h4><b>$320</b></h4>
-                    </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                 
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Plantas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/tierra.png">
+                    <img class="imgproducto" src="img/productos/sansevieria.png" width="75%">
+                  </div>
+                  <div class="product__footer">
+                    <h3>Sansevieria</h3>
+                    <div>
+                      <h4><b>$340</b></h4>
+                    </div>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                 
+                  </div>
+                </div>
+              </div>
+                      
+              <div class="col-sm-3" data-category="Sustratos">
+                <div class="product">
+                  <div class="product__header">
+                    <img class="imgproducto" src="img/productos/sustrato para suculentas.png" width="75%">
+                  </div>
+                  <div class="product__footer">
+                    <h3>Sustrato Suculentas 5 L</h3>
+                    <div>
+                      <h4><b>$320</b></h4>
+                    </div>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3" data-category="Sustratos">
+                <div class="product">
+                  <div class="product__header">
+                    <img class="imgproducto" src="img/productos/tierra.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Huertas 50 L</h3>
                     <div>
                       <h4><b>$930</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                 
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Sustratos">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/compost organico.png">
+                    <img class="imgproducto" src="img/productos/compost organico.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Compost Organico</h3>
                     <div>
                       <h4><b>$260</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                  
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Sustratos">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/maceta cuadrada.png">
+                    <img class="imgproducto" src="img/productos/tierra fertil de jardin.png" width="75%">
+                  </div>
+                  <div class="product__footer">
+                    <h3>Tierra Fertil de Jardiín</h3>
+                    <div>
+                      <h4><b>$700</b></h4>
+                    </div>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3" data-category="Macetas">
+                <div class="product">
+                  <div class="product__header">
+                    <img class="imgproducto" src="img/productos/maceta cuadrada.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Maceta Cuadrada</h3>
                     <div>
                       <h4><b>$450</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>           
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Macetas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/maceta rectangular.png">
+                    <img class="imgproducto" src="img/productos/maceta rectangular.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Maceta Rectangular</h3>
                     <div>
                       <h4><b>$650</b></h4>
                     </div>
-                  <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                   
                 </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Macetas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/maceta redonda.png">
+                    <img class="imgproducto" src="img/productos/maceta redonda.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Maceta Redonda</h3>
                     <div>
                       <h4><b>$450</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                     
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Macetas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/semillas aromaticas.png">
+                    <img class="imgproducto" src="img/productos/maceta colonial.png" width="75%">
+                  </div>
+                  <div class="product__footer">
+                    <h3>Maceta Colonial</h3>
+                    <div>
+                      <h4><b>$550</b></h4>
+                    </div>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                     
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3" data-category="Semillas">
+                <div class="product">
+                  <div class="product__header">
+                    <img class="imgproducto" src="img/productos/semillas aromaticas.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Semillas Aromaticas</h3>
                     <div>
                       <h4><b>$120</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>              
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Semillas">
                 <div class="product">
                   <div class="product__header">
-                    <img class="imgproducto" src="img/productos/resiembra otoñal.png">
+                    <img class="imgproducto" src="img/productos/resiembra otoñal.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Resiembra Otoñal</h3>
                     <div>
                       <h4><b>$420</b></h4>
                     </div>
-                    <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                   
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-3" data-category="Semillas">
                 <div class="product">
-                  <div class="product__header">
-                    <img class="imgproducto" src="img/productos/semillas florales.png">
+                  <div class="product__header" data-category="Semillas">
+                    <img class="imgproducto" src="img/productos/semillas florales.png" width="75%">
                   </div>
                   <div class="product__footer">
                     <h3>Semillas Florales</h3>
                     <div>
                       <h4><b>$120</b></h4>
                     </div>
-                      <a><button type="submit" class="product__btn">Agregar al Carrito</button></a>                      
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                   
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-3" data-category="Herramientas">
+                <div class="product">
+                  <div class="product__header" data-category="Herramientas">
+                    <img class="imgproducto" src="img/productos/tijera de poda 8.png" width="75%">
+                  </div>
+                  <div class="product__footer">
+                    <h3>Tijera de Poda 8´</h3>
+                    <div>
+                      <h4><b>$1000</b></h4>
+                    </div>
+                    <div class="col-md-7" style="display: inline-flex">
+                      <a><button type="submit" class="product__btn">Agregar al Carrito<img src="img/shopping-cart.png"></button></a>
+                    </div>                   
                   </div>
                 </div>
               </div>
@@ -277,8 +385,9 @@
           </div>
 
           <div class="col-md-4"><h4>Nuestras Redes</h4><br>
-            <img src="img/face-logo.png" width="57px">
-            <img src="img/insta-logo.png" width="50px">
+            <a href="https://www.facebook.com/"><img src="img/face-logo.png" width="77px" style="padding-right: 5%;"></a>
+            <a href="https://www.instagram.com/"><img src="img/insta-logo.png" width="72px" style="padding-right: 5.5%;"></a>
+            <a href="https://web.whatsapp.com/"><img src="img/whatsapp-logo.png" width="57px"></a>
           </div>
 
         </section>
@@ -303,6 +412,7 @@
       </section>
 
       <script src="assets/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
     </div>   
   </body>
 </html>

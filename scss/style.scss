@@ -37,11 +37,11 @@ body {
   background-repeat: no-repeat;
 }
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.01rem;
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 4rem;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -51,7 +51,7 @@ body {
   padding: 2%;
 }
 .col-md-12 h1{
-  font-size: 30px;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   line-height: 160%;
@@ -70,7 +70,7 @@ body {
   background-color: #001233;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  font-size: 30px;
+  font-size: 1.5rem;
   padding-top: 8%;
   padding-left: 0%;
   font-weight: bolder;
@@ -83,7 +83,7 @@ body {
   background-color: #001233;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  font-size: 30px;
+  font-size: 1.5rem;
   padding-top: 8%;
   padding-left: 0%;
   font-weight: bolder;
@@ -96,7 +96,7 @@ body {
   background-color: #001233;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  font-size: 23px;
+  font-size: 1.5rem;
   padding-top: 6%;
   padding-left: 0%;
   font-weight: bolder;
@@ -110,16 +110,20 @@ body {
 display: flex;
 flex-direction: column;
 text-align: center;
-width: 25rem;
-padding-bottom: 5%;
+width: 16rem;
+border: solid;
+border-top-left-radius: 60px;
+border-bottom-right-radius: 60px;
+border-width: thin;
+border-color: silver;
 }
 .product__header{
   padding-bottom: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 .product__header img {
   padding-top: 20%;
-max-width: 100%;
-max-height: 100%;
 }
 .product__footer {
 padding: 1rem 0;
@@ -135,9 +139,8 @@ text-decoration: none;
 }
 .product__btn {
   border: none;
-  min-width: 180px;
   height: 50px;
-  padding: 0 30px;
+
   background: #001233;
   color: white;
   display: inline-block;
@@ -147,10 +150,67 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   transition: .3s ease all;
+  font-size: 1rem;
 }
 .product__btn:hover{
   background:silver;
   text-decoration: none;
+}
+.col-sm-3{
+  padding-bottom: 2%;
+}
+.col-sm-3 h3{
+  font-size: 1.3rem;
+}
+.col-sm-3 h4{
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+input[type="radio"]{
+  display: none;
+}
+.container-category{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.container-category label{
+  padding: 6px 40px;
+  margin: 10px;
+  font-size: 20px;
+  background: #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-category label:hover{
+  opacity: 0.8;
+}
+/*sistema de filtrado*/
+
+[value="Todos"]:checked ~ .row .col-sm-3[data-category]{
+  display: block;
+}
+
+[value="Plantas"]:checked ~ .row .col-sm-3:not([data-category~="Plantas"]),
+[value="Sustratos"]:checked ~ .row .col-sm-3:not([data-category~="Sustratos"]),
+[value="Macetas"]:checked ~ .row .col-sm-3:not([data-category~="Macetas"]),
+[value="Herramientas"]:checked ~ .row .col-sm-3:not([data-category~="Herramientas"]),
+[value="Semillas"]:checked ~ .row .col-sm-3:not([data-category~="Semillas"]){
+  display: none;
+}
+
+[value="Todos"]:checked ~ .container-category [for="Todos"],
+[value="Plantas"]:checked ~ .container-category [for="Plantas"],
+[value="Sustratos"]:checked ~ .container-category [for="Sustratos"],
+[value="Macetas"]:checked ~ .container-category [for="Macetas"],
+[value="Herramientas"]:checked ~ .container-category [for="Herramientas"],
+[value="Semillas"]:checked ~ .container-category [for="Semillas"]{
+  background: #46a2fd;
+  color: #fff;
 }
 
 /*======================GALERIA======================*/
@@ -211,19 +271,19 @@ a:hover{
 }
 .cursos__titulo{
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .cursos__enlace{
   color: #001233;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .curos__descripcion{
   line-height: 30px;
   color: #001233;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .boton{
   border: none;
@@ -275,7 +335,7 @@ a:hover{
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 5rem;
   }
 }
 
@@ -300,15 +360,12 @@ a:hover{
   }
 }
 
-@media(max-width: 768px){
+@media(max-width: 800px){
+  @import "banner800";
   .body{
     margin: 0%;
     padding: 0%;
     align-items: center;
-  }
-  .banner{
-    top: 30%;
-    left: 15%;
   }
   .cursos__img{
     display: table-row;
@@ -316,19 +373,11 @@ a:hover{
 }
 
 @media(max-width: 600px){
+  @import "banner600";
   .body{
     margin: 0%;
     padding: 0%;
     align-items: center;
-  }
-  .banner{
-    top: 20%;
-    left: 25%;
-    font-size: 35px;
-    width: 50%;
-  }
-  .bannerimg{
-    width: 105%;
   }
   .cursos__img{
     display: table-row;
@@ -336,6 +385,7 @@ a:hover{
 }
 
 @media(max-width: 480px){
+  @import "banner480";
   .body{
     margin: 0%;
     padding: 0%;
@@ -343,12 +393,6 @@ a:hover{
   }
   .container__marketing{
     align-items: center;
-  }
-  .banner{
-    top: 20%;
-    left: 25%;
-    font-size: 35px;
-    width: 50%;
   }
   .cursos__img{
     display: none;
